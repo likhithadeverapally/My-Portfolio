@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/77a6770754.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <!-- <img src="logo.png" alt="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header"> Home</a></li>
+                    <li><a href="#about"> About</a></li>
+                    <!-- <li><a href="#services"> Services</a></li> -->
+                    <li><a href="#portfolio"> Portfolio</a></li>
+                    <li><a href="#contact"> Contacts</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <!-- <p></p> -->
+                <h1> Hi, I'm<span> D.Likhitha </span> </h1> 
+                <h2> from, <br>University College of Engineering(OU),</h2>
+                <h3>Bachelor of Engineering in <br><span>Artificial Intelligence and Machine Learning(CSE)</span></h3>
+            </div>
+        </div>
+
+
+        <!-- --------------about---------------- -->
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpg" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a dedicated B.E. AIML student, I have honed my expertise in machine learning, 
+                        demonstrating a strong proficiency in developing and implementing ML models. 
+                        My knowledge extends to web programming, allowing me to integrate AI solutions 
+                        seamlessly with web technologies. Additionally, I possess a solid foundation in core 
+                        computer science subjects, ensuring a comprehensive understanding of the principles that 
+                        underpin both software development and advanced algorithms. This blend of skills enables
+                         me to tackle complex problems and contribute effectively to multidisciplinary projects.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span> <br>HTML, CSS, JavaScript, React </li>
+                            <li><span>Machine Learning</span> <br>Supervised and Unsupervised Learning, Model Evaluation, Data Preprocessing, Feature Engineering.</li>
+                            <li><span>NLP</span> <br> Text Preprocessing, Tokenization, Named Entity Recognition, Sentiment Analysis</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024-Current</span> <br>Two months experience in Centre of Exellance as Machine Learning Intern</li>
+                            <!-- <li><span>2019-2021</span> <br>Team Lead at AnimateAcers</li>
+                            <li><span>2017-2019</span> <br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                            <li><span>2016-2017</span> <br>Internship at ekart eCommerce.</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Dec 2021 - May 2025</span> <br>University College of Engineering - Osmania University(UCEOU)--Bachelor of Engineering in Artificial Intelligence and Machine Learning(CSE){CGPA - 8.5}</li>
+                            <li><span>May 2019 - May 2021</span> <br>Narayana junior college kukatpally--Telangana State Board of Intermediate Education(TSBIE){Percentage - 94.8}</li>
+                            <li><span>Batch of 2019</span> <br>DR KKR GOWTHAM CONCEPT SCHOOL--central Board of Secondary Education{MARKS - 317}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 
+    !--------------services---------------- -->
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Desgin</h2>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos repellat rerum esse, ratione impedit obcaecati eveniet aut velit, aliquam, tempora non voluptatem officia nesciunt maxime corporis veniam. Odio, corporis possimus.</p>
+                <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Desgin</h2>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos repellat rerum esse, ratione impedit obcaecati eveniet aut velit, aliquam, tempora non voluptatem officia nesciunt maxime corporis veniam. Odio, corporis possimus.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Desgin</h2>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos repellat rerum esse, ratione impedit obcaecati eveniet aut velit, aliquam, tempora non voluptatem officia nesciunt maxime corporis veniam. Odio, corporis possimus.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+    </div> -->
+
+    <!-- -----------portfolio----------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">     
+                <div class="work">
+                    <img src="work-1.jpg" >
+                    <div class="layer">
+                        <h3>Discord Clone:</h3>
+                        <p>
+                            Built a real-time chat application replicating core functionalities of Discord using React for the frontend and Node.js for the backend.
+                        </p>
+                        <h3>And this Portfolio Website.</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.jpeg" >
+                    <div class="layer">
+                        <h3> Fake Job Posting Prediction: </h3>
+                        <p>
+                           Developed a model to identify fraudulent job postings using natural language
+                            processing and machine learning techniques, achieving an accuracy of 97%.
+                        </p>
+                       
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.jpeg" >
+                    <div class="layer">
+                        <h3>Keyword Extraction:</h3>
+                        <p>
+                            Created a tool for extracting significant keywords from large text documents, improving text analysis efficiency and accuracy.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                        
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <a href="#" class="btn"> see more..</a>
+        </div>
+    </div>
+    <div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">
+                            Contact Me
+                        </h1>
+                        <p>
+                           
+                            <i class="fas fa-paper-plane"></i>
+                            dlikhitha08@gmail.com
+                        </p>
+                        <p> <i class="fas fa-phone-square-alt"></i>+91 9490021021</p>
+                        <div class="social-icons">
+                            <!-- <a href="https://facebook.com/"> <i class="fa-brands fa-facebook"></i></a> -->
+                            <!-- <a href="#"> <i class="fa-brands fa-twitter-square"></i></a> -->
+                            <!-- <a href="#"> <i class="fa-brands fa-instagram"></i></a> -->
+                            <a href="https://www.linkedin.com/in/d-likhitha-a05453271//"> <i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="resume.pdf" download class="btn btn2">Click Here for CV</a>
+                    </div>
+                    <!-- <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                            
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright ©<i class="fas fa-heart"></i> 
+            </p>
+        </div>
+    </div>
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabContents= document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+
+            for(tabcontent of tabContents){
+                tabcontent.classList.remove("active-tab");
+                
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+            
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzd1VpStRenD_dJC3QLVo8I7KQcf_MJZvMdBZ2rOLLn8bEiSL_aGE1F_vC296kGb9y9gA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML= "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
